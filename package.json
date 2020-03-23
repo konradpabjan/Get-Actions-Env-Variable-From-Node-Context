@@ -1,0 +1,32 @@
+{
+  "name": "get-actions-env-variable-from-node-context",
+  "version": "1.0.0",
+  "description": "Gets an env variable from the node context",
+  "main": "dist/index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@actions/core": "^1.2.3",
+    "@types/node": "^13.9.3",
+    "@zeit/ncc": "^0.21.1",
+    "typescript": "^3.8.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "release": "ncc build src/index.ts && git add -f dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/konradpabjan/actions-get-runtime-url.git"
+  },
+  "keywords": [
+    "github",
+    "actions"
+  ],
+  "author": "konradpabjan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/konradpabjan/actions-get-runtime-url/issues"
+  },
+  "homepage": "https://github.com/konradpabjan/actions-get-runtime-url#readme"
+}
