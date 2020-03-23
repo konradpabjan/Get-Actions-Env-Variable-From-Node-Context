@@ -1,0 +1,13 @@
+name: 'Get node env variable'
+description: 'Get the value of a env variable that is only avaialble in a node context and outputs the value'
+author: 'GitHub'
+inputs: 
+  EnvName:
+    description: 'Name of the env variable'
+    required: true
+outputs:
+  EnvValue:
+    description: "The value of the env variable"
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

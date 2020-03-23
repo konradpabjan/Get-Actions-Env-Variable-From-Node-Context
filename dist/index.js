@@ -65,13 +65,13 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core = __importStar(__webpack_require__(470));
 function run() {
-    var envVariable = core.getInput('envVariable', { required: true });
+    var envVariable = core.getInput('EnvName', { required: true });
     var envValue = process.env[envVariable];
     if (!envValue) {
         core.setFailed("Unable to get the value of the " + envVariable + " env variable");
     }
     else {
-        core.setOutput(envVariable, envValue);
+        core.setOutput('EnvValue', envValue);
     }
 }
 run();
