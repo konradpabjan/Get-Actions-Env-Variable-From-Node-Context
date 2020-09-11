@@ -24,4 +24,6 @@ jobs:
 
       - name: Run local action
         uses: ./
+        with:
+          EnvName: 'actions_run_id'
 
