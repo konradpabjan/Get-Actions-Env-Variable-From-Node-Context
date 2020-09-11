@@ -14,10 +14,11 @@ function run() {
     core.endGroup();
     core.error("This is what standard error looks like");
     core.warning("This is going to be standard warning output");
+    chalk.bgCyan;
     console.log("some normal output again");
-    console.log(chalk.bgCyan("Background cyan with console log"));
+    console.log(chalk.blue("Blue with console log"));
     console.log("normal output that should reset color");
-    core.info(chalk.bgCyan("Background cyan with core info"));
+    core.info(chalk.blue("Blue cyan with core info"));
     if (!envValue) {
         core.setFailed("Unable to get the value of the " + envVariable + " env variable");
     }
