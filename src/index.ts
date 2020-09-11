@@ -21,7 +21,8 @@ function run(){
 
     console.log("some normal output again")
 
-    console.log(chalk.blue("Blue with console log"))
+    console.log('curious about this' + chalk.blue("Blue with console log"))
+    console.log('Some more output ' + chalk.bgCyan.green('Curious about this') + ' thinking about this...')
     console.log("normal output that should reset color")
     core.info(chalk.blue("Blue cyan with core info"))
 
