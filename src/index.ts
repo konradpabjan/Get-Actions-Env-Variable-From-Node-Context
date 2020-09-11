@@ -1,5 +1,5 @@
 import * as core from '@actions/core'
-import * as chalk from 'chalk'
+const chalk = require('chalk')
 
 function run(){
 

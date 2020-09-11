@@ -313,7 +313,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core = __importStar(__webpack_require__(470));
-var chalk = __importStar(__webpack_require__(843));
+var chalk = __webpack_require__(843);
 function run() {
     var envVariable = core.getInput('EnvName', { required: true });
     var envValue = process.env[envVariable];
