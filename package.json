@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Gets an env variable from the node context",
   "main": "dist/index.js",
-  "dependencies": {},
+  "dependencies": {
+    "chalk": "^4.1.0"
+  },
   "devDependencies": {
     "@actions/core": "^1.2.3",
     "@types/node": "^13.9.3",
