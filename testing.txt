@@ -1,0 +1,14 @@
+this is going to be some normal output
+this is output using core.info
+some more normal output
+::group::this is the start of a group
+info output inside group
+standard output in group
+::endgroup::
+::error::This is what standard error looks like
+::warning::This is going to be standard warning output
+some normal output again
+curious about thisBlue with console log
+Some more output Curious about this thinking about this...
+normal output that should reset color
+Blue cyan with core info

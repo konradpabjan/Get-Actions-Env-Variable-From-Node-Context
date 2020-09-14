@@ -4,6 +4,7 @@
   "description": "Gets an env variable from the node context",
   "main": "dist/index.js",
   "dependencies": {
+    "@actions/exec": "^1.0.4",
     "@types/chalk": "^2.2.0",
     "chalk": "^4.1.0"
   },
