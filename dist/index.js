@@ -1283,17 +1283,11 @@ function run() {
                     console.log('Some more output ' + chalk.bgCyan.green('Curious about this') + ' thinking about this...');
                     console.log("normal output that should reset color");
                     core.info(chalk.blue("Blue cyan with core info"));
-                    return [4 /*yield*/, exec.exec('bash', ['-c', 'curl -s https://gist.githubusercontent.com/HaleTom/89ffe32783f89f403bba96bd7bcd1263/raw/ | bash'])
-                        /*
-                        if(!envValue){
-                            core.setFailed(`Unable to get the value of the ${envVariable} env variable`)
-                        } else {
-                            core.setOutput('EnvValue', envValue)
-                        }
-                        */
-                    ];
+                    console.log('\u001b[35mThis is a test');
+                    return [4 /*yield*/, exec.exec('bash', ['-c', 'curl -s https://gist.githubusercontent.com/HaleTom/89ffe32783f89f403bba96bd7bcd1263/raw/ | bash'])];
                 case 1:
                     _a.sent();
+                    console.log('\u001b[36mThis is a test');
                     return [2 /*return*/];
             }
         });

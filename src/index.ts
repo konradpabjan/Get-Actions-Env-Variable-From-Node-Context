@@ -25,8 +25,10 @@ async function run(){
     console.log("normal output that should reset color")
     core.info(chalk.blue("Blue cyan with core info"))
 
+    console.log('\u001b[35mThis is a test');
     await exec.exec('bash', ['-c','curl -s https://gist.githubusercontent.com/HaleTom/89ffe32783f89f403bba96bd7bcd1263/raw/ | bash'])
 
+    console.log('\u001b[36mThis is a test');
     /*
     if(!envValue){
         core.setFailed(`Unable to get the value of the ${envVariable} env variable`)
