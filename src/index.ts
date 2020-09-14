@@ -37,6 +37,12 @@ async function run(){
     console.log(`${chalk.blue('this should be blue using chalk')}`)
     console.log(style.bgColor.ansi.hsl(120, 80, 72) + 'Hello world!' )
     console.log(style.color.ansi16m.hex('#abcdef') + 'Hello world!')
+
+    core.info('\u001b[35mThis is a test');
+    core.info('\u001b[36mThis is a test');
+    core.info(style.bgColor.ansi.hsl(70, 180, 172) + 'Hello world!' )
+    core.info(style.color.ansi16m.hex('#abcdef') + 'Hello world!')
+
     /*
     if(!envValue){
         core.setFailed(`Unable to get the value of the ${envVariable} env variable`)
