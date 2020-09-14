@@ -12,3 +12,10 @@ curious about thisBlue with console log
 Some more output Curious about this thinking about this...
 normal output that should reset color
 Blue cyan with core info
+[35mThis is a test
+[36mThis is a test
+[31mThis should be red[39m
+[46mThis should be background cyan[49m
+this should be blue using chalk
+[102mHello world!
+[38;2;171;205;239mHello world!

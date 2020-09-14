@@ -1,6 +1,8 @@
 import * as core from '@actions/core'
 import * as exec from '@actions/exec'
 const chalk = require('chalk')
+const style = require('ansi-styles');
+var colors = require('colors');
 
 async function run(){
 
@@ -26,9 +28,15 @@ async function run(){
     core.info(chalk.blue("Blue cyan with core info"))
 
     console.log('\u001b[35mThis is a test');
-    await exec.exec('bash', ['-c','curl -s https://gist.githubusercontent.com/HaleTom/89ffe32783f89f403bba96bd7bcd1263/raw/ | bash'])
+    //await exec.exec('bash', ['-c','curl -s https://gist.githubusercontent.com/HaleTom/89ffe32783f89f403bba96bd7bcd1263/raw/ | bash'])
 
     console.log('\u001b[36mThis is a test');
+
+    console.log(colors.red('This should be red'))
+    console.log(colors.bgCyan("This should be background cyan"))
+    console.log(`${chalk.blue('this should be blue using chalk')}`)
+    console.log(style.bgColor.ansi.hsl(120, 80, 72) + 'Hello world!' )
+    console.log(style.color.ansi16m.hex('#abcdef') + 'Hello world!')
     /*
     if(!envValue){
         core.setFailed(`Unable to get the value of the ${envVariable} env variable`)
