@@ -732,6 +732,15 @@ function run() {
             console.log(style.color.ansi16m.hex('#abcdef') + 'Hello world!');
             core.info('\u001b[35mThis is a test');
             core.info('\u001b[36mThis is a test');
+            core.info('\u001b[43mThis background will be green');
+            core.info('\u001b[38;5;6mThis foreground will be cyan');
+            core.info('\u001b[48;5;6mThis background will be cyan');
+            core.info('\u001b[38;2;255;0;0mThis foreground will be bright red');
+            core.info('\u001b[48;2;255;0;0mThis background will be bright red');
+            core.info('\u001b[1mBold text');
+            core.info('\u001b[3mItalic text');
+            core.info('\u001b[4Underlined text');
+            core.info('\u001b[31;46mRed foreground with a Cyan background and \u001b[1mbold text at the end');
             core.info(style.bgColor.ansi.hsl(70, 180, 172) + 'Hello world!');
             core.info(style.color.ansi16m.hex('#abcdef') + 'Hello world!');
             return [2 /*return*/];
